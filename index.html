@@ -1,74 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Web Development Lab</title>
+<meta charset="UTF-8">
+<title>Web Dev - Lab1</title>
 
-    <style>
-        /* Style 1: Red color */
-        .style1 {
-            color: red;
-        }
+<style>
 
-        /* Style 2: Green color, 16px, bold, Cambria */
-        .style2 {
-            color: green;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: Cambria;
-        }
+body{
+    background-color: #eeeeee;
+    font-family: "Times New Roman", serif;
+    border: 8px solid black;
+    padding: 40px;
+}
 
-        /* Style 3: Font size 14px */
-        .style3 {
-            font-size: 14px;
-        }
+/* العنوان الرئيسي */
+h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
 
-        /* Style 4: Image size 250x250 */
-        .style4 {
-            width: 250px;
-            height: 250px;
-        }
-    </style>
-    </head>
+/* العنوان الأحمر */
+.lab-title{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+/* تقسيم الصفحة قسمين */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* الجهة اليسرى */
+.info{
+    width: 70%;
+    font-size: 20px;
+}
+
+/* الكلمات باللون الأخضر */
+.label{
+    color: green;
+    font-weight: bold;
+}
+
+/* الصورة */
+.image{
+    width: 30%;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+</style>
+</head>
 
 <body>
 
-    <h1>Welcome to my Web Site</h1>
+<h1>Welcome to my Web Site</h1>
 
-    <h2 class="style1">Web Development (Lab1)</h2>
+<div class="lab-title">
+    Web Development (Lab1)
+</div>
 
-    <p>
-        <span class="style2">Full name:</span> 
-        <span class="style3">
-        kheffach elhadi</span>
-    </p>
+<div class="container">
 
-    <p>
-        <span class="style2">Age:</span> 
-        <span class="style3">20 years old</span>
-    </p>
+    <div class="info">
+        <p><span class="label">Full name:</span> kheffach elhadi</p>
+        <p><span class="label">Age:</span> 20 years old</p>
+        <p><span class="label">Class:</span> 2<sup>nd</sup> LMD computer Science</p>
+        <p><span class="label">University:</span> University of EL OUED</p>
+    </div>
 
-    <p>
-        <span class="style2">Class:</span> 
-        <span class="style3">2nd LMD computer Science</span>
-            </p>
+    <div class="image">
+        <img src="https://pic.i7lm.com/wp-content/uploads/2020/05/1-16.jpg" alt="House">
+    </div>
+    </div>
 
-    <p>
-        <span class="style2">University:</span> 
-        <span class="style3">University of EL OUED</span>
-    </p>
-
-
-
-
-     <img src="https://pic.i7lm.com/wp-content/uploads/2020/05/1-16.jpg"class="style4"/>
-
-  
-    
-  
-
-  
-    
-  
 </body>
 </html>
